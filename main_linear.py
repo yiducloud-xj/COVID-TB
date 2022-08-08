@@ -20,8 +20,8 @@ device = torch.device('cpu')
 setup_seed(20)
 
 
-MODEL_PATH = '/home/fidtqh3/COVID_19_joint_extraction_2/prev_trained_model/bert-base-chinese'
-OUTPUT_PATH = '/home/fidtqh3/COVID_19_joint_extraction_2/outputs/checkpoint_linear_ignore0.pth.tar'
+MODEL_PATH = './bert-base-chinese'
+OUTPUT_PATH = './outputs/checkpoint.pth.tar'
 config = BertConfig.from_pretrained(pretrained_model_name_or_path=MODEL_PATH, num_labels=2)
 config.soft_label = False
 MAX_SEQ_LEN = 512
