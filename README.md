@@ -30,11 +30,11 @@
 
 公开的流调报告来自于数据集[1]: https://github.com/IBM/Dataset-Epidemiologic-Investigation-COVID19
 
+[1] Wang J, Wang K, Li J, Jiang JM, Wang YF, Mei J, Accelerating Epidemiological Investigation Analysis by Using NLP and Knowledge Reasoning: A Case Study on COVID-19, AMIA 2020. (submission)
+
 ## 3. 执行步骤
 1，运行main.py以执行模型训练和预测流程（单次执行即可完成训练和预测流程），于代码16-20行设定CPU/GPU模式以及具体执行的显卡序号。同时要修改datasets/ECR_COVID_19/load_datasets.py中11-15行，以及models/je_model.py中11-15行中的GPU/CPU设定。
 
 2，如果GPU显存较小，请手动调小main.py中31行的BATCH_SIZE值，同时在datasets/ECR_COVID_19/load_datasets.py中21行也需要进行一致的修改。
 
 
-
-[1] Wang J, Wang K, Li J, Jiang JM, Wang YF, Mei J, Accelerating Epidemiological Investigation Analysis by Using NLP and Knowledge Reasoning: A Case Study on COVID-19, AMIA 2020. (submission)
