@@ -28,6 +28,8 @@
 
 + 需要原始的BERT-BASE-CHINESE预训练模型，放置于代码根目录下，来源于huggingface的原始pytorch版本: https://huggingface.co/bert-base-chinese
 
++ 本方法训练时结合三大类标注实体信息(见实际数据集)，以多任务学习的方式进行训练，但是只针对事件抽取进行调优和测试。
+
 + 公开的流调报告来自于数据集[1]: https://github.com/IBM/Dataset-Epidemiologic-Investigation-COVID19
 
 [1] Wang J, Wang K, Li J, Jiang JM, Wang YF, Mei J, Accelerating Epidemiological Investigation Analysis by Using NLP and Knowledge Reasoning: A Case Study on COVID-19, AMIA 2020. (submission)
