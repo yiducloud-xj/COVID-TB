@@ -15,10 +15,10 @@ device_ids = [0, 1, 2, 3, 4, 5, 6, 7]
 device = torch.device('cpu')
 
 cur_path = os.getcwd()
-train_path = "/Users/jiaoxiaokang/Desktop/covid/datasets/ECR_COVID_19/train.txt"
-test_path = "/Users/jiaoxiaokang/Desktop/covid/datasets/ECR_COVID_19/test.txt"
-valid_path = "/Users/jiaoxiaokang/Desktop/covid/datasets/ECR_COVID_19/valid.txt"
-BATCH_SIZE=6
+train_path = "./datasets/ECR_COVID_19/train.txt"
+test_path = "./covid/datasets/ECR_COVID_19/test.txt"
+valid_path = "./covid/datasets/ECR_COVID_19/valid.txt"
+BATCH_SIZE=16
 
 
 def load_datasets(datasets):
