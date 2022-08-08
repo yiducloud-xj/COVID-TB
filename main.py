@@ -22,13 +22,13 @@ device = torch.device('cpu')
 setup_seed(20)
 
 
-MODEL_PATH = '/Users/jiaoxiaokang/Desktop/covid/bert-base-chinese'
-OUTPUT_PATH = '/Users/jiaoxiaokang/Desktop/covid/outputs/checkpoint_linear_ignore0.pth.tar'
+MODEL_PATH = './bert-base-chinese'
+OUTPUT_PATH = './outputs/checkpoint.pth.tar'
 config = BertConfig.from_pretrained(pretrained_model_name_or_path=MODEL_PATH, num_labels=2)
 config.soft_label = False
 MAX_SEQ_LEN = 512
 VEC_SIZE = 768
-BATCH_SIZE = 6
+BATCH_SIZE = 16
 EPOCH = 6
 LEANING_RATE = 3e-5
 EPS = 1e-12
