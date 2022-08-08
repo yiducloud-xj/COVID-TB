@@ -812,7 +812,7 @@ class JointExtract(nn.Module):
         patient_loss = patient_outputs[0]
         patient_pos = patient_outputs[1:]
 
-        print("patient_output")
+        #print("patient_output")
         """
         event_outputs = self.eventextract(all_seq_vec, event_start_pos, event_end_pos,
                 onset_start_pos, onset_end_pos,
@@ -849,7 +849,7 @@ class JointExtract(nn.Module):
                                                 l1_h_0=l1_h_0, l1_c_0=l1_c_0, l2_h_0=l2_h_0, l2_c_0=l2_c_0)
         relation_loss = relation_outputs[0]
         relation_pos = relation_outputs[1:]
-        print("relation_output")
+        #print("relation_output")
 
         event_outputs = self.eventextract(all_seq_vec, event_start_pos, attention_mask=attention_mask, l1_h_0=l1_h_0,
                                           l1_c_0=l1_c_0, l2_h_0=l2_h_0, l2_c_0=l2_c_0)
