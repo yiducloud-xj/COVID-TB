@@ -9,7 +9,7 @@
 + 建议在Linux环境下运行，其他环境请注意适配GPU驱动与CUDA版本
 
 ### Python库:
-+ torch==1.4.0
++ torch == 1.4.0
 
 + sklearn == 1.0.1
 
@@ -22,7 +22,7 @@
 + transformers == 4.20.1
 
 ### 其他非标准化硬件需求:
-模型训练比较依赖GPU，若以CPU运算能力需要大于五天的训练时间（6个epoch）
+模型训练较大程度依赖GPU，基于NVIDIA TESLA P40单卡训练约3-4小时，若以CPU运算能力需要大于五天的训练时间（6个epoch）
 
 ## 2. 安装说明
 + 可执行程序，无安装需要，GPU相关驱动和CUDA版本请参照NVIDIA官网: https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux
