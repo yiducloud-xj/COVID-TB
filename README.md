@@ -6,6 +6,7 @@
 ### 软件版本:
 
 + Python version 3.7.0 
++ 建议在Linux环境下运行，其他环境请注意适配GPU驱动与CUDA版本
 
 ### Python库:
 + torch==1.4.0
@@ -18,7 +19,7 @@
 
 + torchmetrics == 0.9.2
 
-+ transformers==4.20.1
++ transformers == 4.20.1
 
 ### 其他非标准化硬件需求:
 模型训练比较依赖GPU，若以CPU运算能力需要大于五天的训练时间（6个epoch）
